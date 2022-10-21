@@ -14,26 +14,26 @@ def bubble_sort(sequence: list, direction: str):
 
 
 def _bubble_sort_asc(sequence: list):
-    replacements_happened = True
-    while replacements_happened:
-        replacements_happened = False
+    shift_happened = True
+    while shift_happened:
+        shift_happened = False
         for i in range(len(sequence) - 1):
             if sequence[i] > sequence[i + 1]:
                 sequence[i], sequence[i + 1] = sequence[i + 1], sequence[i]
-                replacements_happened = True
+                shift_happened = True
     return sequence
 
 
 def _bubble_sort_dsc(sequence: list):
-    replacements_happened = True
-    while replacements_happened:
-        replacements_happened = False
+    shift_happened = True
+    while shift_happened:
+        shift_happened = False
         for i in range(len(sequence) - 1):
             if sequence[i] < sequence[i + 1]:
                 sequence[i], sequence[i + 1] = sequence[i + 1], sequence[i]
-                replacements_happened = True
+                shift_happened = True
     return sequence
 
 
 if __name__ == "__main__":
-    print_result(bubble_sort(*input_data()))
+    print_result(*bubble_sort(*input_data()))
