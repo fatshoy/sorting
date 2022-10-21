@@ -38,4 +38,4 @@ def _quick_sort_dsc(sequence):
 
 
 if __name__ == "__main__":
-    print_result(quick_sort(*input_data()))
+    print_result(*quick_sort(*input_data()))
