@@ -52,4 +52,4 @@ def _cocktail_sort_dsc(sequence):
 
 
 if __name__ == "__main__":
-    print_result(cocktail_sort(*input_data()))
+    print_result(*cocktail_sort(*input_data()))
